@@ -27,7 +27,7 @@ Please wait for building image. After that you can use this image.
 ## How to run this image ?
 We're using nvidia-docker to make container. So you can use this command
 
-    docker run --name docker-deeplearning -v /path/to/your/project/:/workspace/ -p 6006:6006 -p 80:80 -p 8888:8888 -p 3000:3000 mynameismaxz/docker-deeplearning:latest
+    nvidia-docker run --name docker-deeplearning -v /path/to/your/project/:/workspace/ -p 6006:6006 -p 80:80 -p 8888:8888 -p 3000:3000 mynameismaxz/docker-deeplearning:latest
 
 ## Port Usage
 |Port| Description  |
